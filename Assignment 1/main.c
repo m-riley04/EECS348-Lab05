@@ -171,12 +171,12 @@ int main()
     printf("%-8s \t\t %-8s\n", "Month", "Sales");
     for (int i = 0; i < 12; i++)
     {
-        printf("%-8s \t\t $ %-8.2f\n", months[i], sales[i]);
+        printf("%-8s \t\t $ %-8.2f\n", months[i], sales[i].value);
     }
 
     // Summary
     printf("\nMinimum sales: \t\t $ %-8.2f (%s)\n", minimum.value, minimum.month);
-    printf("Maxmimum sales: \t\t $ %-8.2f (%s)\n", maximum.value, maximum.month);
+    printf("Maxmimum sales: \t $ %-8.2f (%s)\n", maximum.value, maximum.month);
     printf("Average sales: \t\t $ %-8.2f\n", average);
 
     // 6-Month Moving Average
